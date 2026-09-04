@@ -4,7 +4,11 @@
           <title>Starter Gallery Assignment</title>
      </head>
      <body>
-         <h1>Cat Pictures</h1>
-         <img src="Kitty3.jpg" alt="A close up of a white cat">
-    </body>
+          <h1>Cat Pictures</h1>
+          <img src="Kitty3.jpg" alt="A close up of a white cat">
+          <img src="Kitty2.jpg" alt="A gray cat staring at two fish in a fish bowl">
+          <p>Picture taken by admiller, licensed under CC BY</p>
+          <img src="Kitty3.jpg" alt="A gray cat with a panda costume on">
+          <p>Picture taken by fox_kiyo, licensed under CC BY-SA</p>
+     </body>
 </html>
