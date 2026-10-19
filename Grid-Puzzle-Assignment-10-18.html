@@ -29,19 +29,24 @@
     .puzzle-box {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
+      max-width: 500px;
+      margin: 0 auto;
     }
 
     .piece {
-      width: 150px;
-      height: 150px;
+      width: calc((100% - 20px) / 3);
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
     }
 
     .faulty-piece {
     }
   </style>
 </head>
+  
 <body>
   <header class="my-header">
     <h1>Isabella Simpson</h1>
@@ -50,18 +55,21 @@
 
   <main class="my-puzzle-area">
     <div class="puzzle-box">
-      <img src="puzzle2_A.jpg" class="piece">
-      <img src="puzzle2_B.jpg" class="piece">
-      <img src="puzzle2_C.jpg" class="piece">
-      <img src="puzzle2_D.jpg" class="piece">
-      <img src="puzzle2_E.jpg" class="piece">
-      <img src="puzzle2_F.jpg" class="piece">
-      <img src="puzzle2_G.jpg" class="piece">
-      <img src="puzzle2_H.jpg" class="piece">
-      <img src="puzzle2_I.jpg" class="piece">
-      <img src="puzzle2_J.jpg" class="piece">
       <img src="puzzle2_K.jpg" class="piece">
+      <img src="puzzle2_A.jpg" class="piece">
+      <img src="puzzle2_F.jpg" class="piece">
+      
+      <img src="puzzle2_C.jpg" class="piece faulty-piece">
+      <img src="puzzle2_D.jpg" class="piece">
+      <img src="puzzle2_J.jpg" class="piece">
+      
+      <img src="puzzle2_E.jpg" class="piece">
       <img src="puzzle2_L.jpg" class="piece">
+      <img src="puzzle2_H.jpg" class="piece">
+      
+      <img src="puzzle2_G.jpg" class="piece">
+      <img src="puzzle2_B.jpg" class="piece">
+      <img src="puzzle2_I.jpg" class="piece">
     </div>
   </main>
 
