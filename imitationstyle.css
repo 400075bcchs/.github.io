@@ -1,168 +1,145 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #f4f6f9;
   font-family: Arial, sans-serif;
-  color: #333333;
-}
-
-.showcase-header {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e1e4e8;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
-}
-
-.showcase-header h1 {
-  margin: 0 0 10px 0;
-  font-size: 32px;
-  color: #1a1a1a;
-}
-
-.showcase-header p {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 60px;
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-.component-card {
-  background-color: #ffffff;
-  border: 1px solid #e1e4e8;
-  border-radius: 8px;
+  background-color: #f4f4f9;
+  color: #333;
   padding: 30px;
-  width: 100%;
-  max-width: 600px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
+  margin: 0;
 }
 
-.component-card h2 {
-  margin-top: 0;
-  margin-bottom: 25px;
-  font-size: 18px;
-  color: #444444;
+h1 {
   text-align: center;
-  border-bottom: 2px solid #eaecef;
-  padding-bottom: 8px;
-  width: 100%;
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  align-items: center;
+  justifty-items: center;
+}
+
+.card {
+  text-align: center;
+}
+
+.card h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #555;
 }
 
 /* Penguin */
 .oval-container {
-  width: 450px;
-  height: 320px;
+  display: inline-block;
+  width: 320px;
+  height: 220px;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid #333333;
-  max-width: 100%;
+  position: relative;
+  box-shadow: inset 0 0 0 2px #4a4a4a;
 }
 
-.oval-container img {
+.oval-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: sepia(30%) contrast(95%) brightness(105%) opacity(90%);
 }
 
 /* Football and Tic-Tac-Toe */
-.tictactoe-border-bg {
-  width: 360px;
-  height:520px;
-
-  background-image: url('tic-tac-toe.png');
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+.tictactoe-card {
+  display: inline-block;
+  padding: 15px;
+  background-color: #000;
+  box-shadow:
+    inset 0 0 0 5px #fff,
+    inset 0 33% 0 5px #fff,
+    inset 0 -33% 0 5px #fff,
+    inset 33% 0 0 5px #fff,
+    inset -33% 0 0 5px #fff;
 }
 
-.center-field-img {
-  width: 72%;
-  height: 82%;
-  object-fit: fill;
+.tictactoe-card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%) contrast(120%);
 }
       
 /* Dinosaur */
-.dino-container {
-  width: 220px;
-  display: flex;
-  justifty-content: center;
-  padding: 20px 0;
+.dino-card {
+  display: inline-block;
+  padding: 20px;
+  background-color: #e6e6e6;
+  border-radius: 12px;
 }
 
-.dino-blue {
-  width: 100%;
+.blue-dino {
+  max-width: 250px;
   height: auto;
-  filter: hue-rotate(110deg) saturate(1.2) drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+  filter: hue-rotate(100deg) drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.4));
 }
 
 /* Seagulls */
-.photo-frame {
-  background-color: #ffffff;
-  padding: 16px;
-  padding-bottom: 24px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  border-radius: 2px;
-  border: 1px solid #e2e5e9;
+.seagull.card {
+  display: inline-block;
+  padding: 20px;
+  background-color: #9cb4d8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.sky-canvas {
-  width: 320px;
-  height: 400px;
-  background: linear-gradient(to bottom, #4a7ec4 0%, #8bb5e8 50%, #d4e5f7 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.sky-canvas img {
-  width: 90%;
+.seagull-img {
+  display: block;
+  max-width: 260px;
   height: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+}
+
+/* Butterfly */
+.butterfly-container {
+  display: inline-block;
+  overflow: hidden;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.styled-butterfly {
+  display: block;
+  max-width: 200px;
+  height: auto;
+  filter: invert(100%) hue-rotate(100deg) brightness(1.1);
 }
 
 /* Theater */
-.stage-container {
-  width: 400px;
-  height: 400px;
+.stage-card {
   position: relative;
-  border-radius: 2px;
-  overflow: hidden;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.16);
+  display: inline-block;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.stage-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.stage-img {
   display: block;
+  max-width: 200px;
+  height: auto;
+  border-radius: 4px;
+  filter: blur(3px) brightness(90%);
 }
 
 .overlay-text {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  writing-mode: horizontal-rl;
+  transform: translate(-50%, -50%)
   color: #ffffff;
-  font-size: 30px;
+  font-size: 32px;
+  font-family: sans-serif;
   font-weight: bold;
-  font-family: 'Arial-Black', Impact, sans-serif;
-  letter-spacing: 2px;
-  user-select: none;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
