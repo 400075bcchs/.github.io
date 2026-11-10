@@ -102,7 +102,7 @@ body {
   padding: 20px 0;
 }
 
-dino-blue {
+.dino-blue {
   width: 100%;
   height: auto;
   filter: hue-rotate(110deg) saturate(1.2) drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
