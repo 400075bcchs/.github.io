@@ -50,8 +50,8 @@ h1 {
 /* Football and Tic-Tac-Toe */
 .tictactoe-card {
   display: inline-block;
-  border: 35px solid transparent;
-  border-image: url('tic-tac-toe.png') 35 repeat;
+  border: 20px solid transparent;
+  border-image: url('tic-tac-toe.png') 20 repeat;
 }
 
 .tictactoe-card img {
@@ -79,7 +79,6 @@ h1 {
 .seagull.card {
   display: inline-block;
   padding: 20px;
-  background: linear-gradient(to bottom, #7a9ec7, #b8d2ec) !important;
   background-color: #7a9ec7;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -89,6 +88,7 @@ h1 {
   display: block;
   max-width: 260px;
   height: auto;
+  background: linear-gradient(to bottom, #7a9ec7, #b8d2ec) !important;
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
 }
 
